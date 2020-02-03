@@ -1,6 +1,6 @@
 <launch>
 
-    <arg name="namespace" default="/" />
+    <arg name="namespace" default="/basic_pig" />
     <arg name="world_name" default="worlds/empty_world" />
     <arg name="cmd_timeout" default="0.5"/>
 
@@ -31,7 +31,7 @@
                 -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
         <!-- Load the joint ctrlrs -->
-        <node name="controller_spawner" pkg="controller_manager" type="spawner" output="screen" args="$(find little_pig_ctrl)/config/basic_pig_joint_ctrlr_params.yaml"/>
+        <node name="controller_spawner" pkg="controller_manager" type="spawner" output="screen" ns="$(arg namespace)" args="$(find little_pig_ctrl)/config/basic_pig_joints_ctrlr_params.yaml"/>
 
         <!-- <node name="little_ackerman_controller" pkg="little_pig_ctrl" type="little_ackerman_controller">
             <param name="cmd_timeout" value="$(arg cmd_timeout)"/>
