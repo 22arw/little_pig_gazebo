@@ -18,7 +18,7 @@
             <arg name="world_name" value="worlds/rubble.world" />
         </include>
 
-        <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/basic_pig.urdf.xacro"/>
+        <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/basic_laser_pig.urdf.xacro"/>
 
         <node name="vehicle_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
             <param name="publish_frequency" value="30.0"/>
