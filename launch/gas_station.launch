@@ -1,6 +1,6 @@
 <launch>
 
- <arg name="namespace" default="/basic_laser_pig" />
+    <arg name="namespace" default="/basic_laser_pig" />
     <arg name="world_name" default="worlds/empty_world" />
     <arg name="cmd_timeout" default="1"/>
 
@@ -14,9 +14,9 @@
 
     <group ns="$(arg namespace)">
         <!-- Create the world -->
-	  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
 	    <arg name="world_name" value="$(find little_pig_gazebo)/worlds/gas_station.world"/>
-	  </include>
+	</include>
 
         <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/basic_laser_pig.urdf.xacro"/>
 
@@ -39,6 +39,5 @@
         </node>
 
     </group>
-
 
 </launch>
