@@ -2,12 +2,12 @@
 
  <arg name="namespace" default="/basic_laser_pig" />
     <arg name="world_name" default="worlds/empty_world" />
-    <arg name="cmd_timeout" default="0.5"/>
+    <arg name="cmd_timeout" default="1"/>
 
     <!-- Vehicle pose arguments -->
     <arg name="x" default="0.0"/>
     <arg name="y" default="0.0"/>
-    <arg name="z" default="1.0" />
+    <arg name="z" default="0.0" />
     <arg name="roll" default="0.0"/>
     <arg name="pitch" default="0.0"/>
     <arg name="yaw" default="0.0"/>
@@ -15,7 +15,7 @@
     <group ns="$(arg namespace)">
         <!-- Create the world -->
 	  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-	    <arg name="world_name" value="$(find little_pig_gazebo)/worlds/MYROBOT.world"/>
+	    <arg name="world_name" value="$(find little_pig_gazebo)/worlds/gas_station.world"/>
 	  </include>
 
         <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/basic_laser_pig.urdf.xacro"/>
