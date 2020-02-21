@@ -56,3 +56,7 @@ Run this command to launch little pig laser in the gas station simulation
 You are able to add laser pig to any simulation by making sure the Launch File's param "Robot Description" is set to find basic_laser_pig 
 
 Now, you can launch Gazebo and RVIZ. Inside of RVIZ, add the laser component to the displays with the LaserScan topic set to /basic_laser_pig/laser_link. Also check the Global Options to ensure the fixed frame is set to map. After that, you can similarly add the camera data.
+
+### Troubleshooting
+
+If you get stuck in Gazebo attempting to open the laser pig simulation, try simply opening the ```basic_pig_gz.launch``` file first. I'm not sure why this happens, but this is a workaround.
