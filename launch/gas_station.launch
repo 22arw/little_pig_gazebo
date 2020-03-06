@@ -38,6 +38,12 @@
             <rosparam file="$(find little_pig_ctrl)/config/basic_pig_ackermann_ctrlr_params.yaml" command="load" />
         </node>
 
+        <node pkg="tf" type="static_transform_publisher" name="laser_link" args="0 0 0 0 0 0 map basic_laser_pig/laser_link 100" />
+
+	<node pkg="tf" type="static_transform_publisher" name="camera_link" args="0 0 0 0 0 0 map basic_laser_pig/camera_link 100"/>
+
+	<node pkg="little_pig_ctrl" type="teleop_test.py" name="teleop" output="screen" />
+
     </group>
 
 </launch>
