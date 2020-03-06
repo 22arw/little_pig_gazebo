@@ -40,14 +40,14 @@ This should completed without failing. If it does fail, call Coach. From the ```
 You should see a gazebo window open with an empty world and Basic Pig just sitting there. If it fails, Call Coach.
 
 ### Using Laser/Camera with RVIZ/Gazebo
-
-Before launching Gazebo, you will need to open another terminal tab and run the following command:
+#With the latest updates, these static publishers should run AUTOMATICALLY and will not require you to enter any of these commands besides the launch file.
+~~Before launching Gazebo, you will need to open another terminal tab and run the following command:
 
 - ```rosrun tf static_transform_publisher 0 0 0 0 0 1 map basic_laser_pig/laser_link 100```
 
 Similarly, you will need a statis transform publisher for the camera:
 
-- ```rosrun tf static_transform_publisher 0 0 0 0 0 1 map basic_laser_pig/laser_link 100```
+- ```rosrun tf static_transform_publisher 0 0 0 0 0 1 map basic_laser_pig/laser_link 100```~~
 
 Run this command to launch little pig laser in the gas station simulation
 
