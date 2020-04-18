@@ -50,6 +50,7 @@
 
         <node name="rviz" pkg="rviz" type="rviz" args="-d $(find little_pig_rviz)/rviz/urdf.rviz" required="true"/>
 -->
+        <include file="$(find little_pig_ctrl)/launch/teleop.launch" /> 
     </group>
 
 </launch>
