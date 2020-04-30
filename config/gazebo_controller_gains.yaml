@@ -1,0 +1,8 @@
+gazebo_ros_control: #These gains are only used by gazebo
+  pid_gains:
+    left_front_axle: {p: 1164.0, i: 1164000.0, d: 0.291}
+    right_front_axle: {p: 1164.0, i: 1164000.0, d: 0.291}
+    #left_rear_axle: {p: 300.0, i: 0.0, d: 0.0, i_clamp: 0.0}
+    #right_rear_axle: {p: 300.0, i: 0.0, d: 0.0, i_clamp: 0.0}
+    left_steering_joint: {p: 60000.0, i: 4000000.0, d: 225.0}
+    right_steering_joint: {p: 60000.0, i: 4000000.0, d: 225.0}
