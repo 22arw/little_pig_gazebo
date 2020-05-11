@@ -13,7 +13,7 @@
     <arg name="pitch" default="0.0"/>
     <arg name="yaw" default="0.0"/>
 
-	<rosparam command="load" file="$(find little_pig_gazebo)/config/gazebo_controller_gains.yaml"/>
+    <rosparam command="load" file="$(find little_pig_gazebo)/config/gazebo_controller_gains.yaml"/>
 
     <rosparam command="load" file="$(find little_pig_description)/config/ackermann_config.yaml"/>
 
