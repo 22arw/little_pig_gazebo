@@ -2,7 +2,7 @@
 <launch>
 
     <!-- <arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/> -->
-    <arg name="robot" default="basic_laser_pig"/>
+    <arg name="robot" default="little_pig_base"/>
     <arg name="sim_ns" default="simulation"/>
 
     <!-- Vehicle pose arguments -->
