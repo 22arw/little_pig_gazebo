@@ -1,6 +1,6 @@
 <launch>
 
-    <arg name="namespace" default="/basic_laser_pig" />
+    <arg name="namespace" default="/little_pig_base" />
     <arg name="world_name" default="worlds/empty_world" />
     <arg name="cmd_timeout" default="1"/>
 
@@ -18,7 +18,7 @@
 	    <arg name="world_name" value="$(find little_pig_gazebo)/worlds/gas_station.world"/>
 	</include>
 
-        <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/basic_laser_pig.urdf.xacro"/>
+        <param name="robot_description" command="$(find xacro)/xacro $(find little_pig_description)/urdf/little_pig_base.urdf.xacro"/>
 
         <node name="vehicle_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
             <param name="publish_frequency" value="30.0"/>

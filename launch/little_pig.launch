@@ -6,7 +6,7 @@
     
     <arg name="namespace" default="/basic_pig" />
     <arg name="world_name" default="worlds/empty_world" />
-    <arg name="robot" default="basic_laser_pig" />
+    <arg name="robot" default="little_pig_base" />
     <arg name="path2urdf" default="$(find little_pig_description)" />
 
     <!-- Vehicle pose arguments -->
